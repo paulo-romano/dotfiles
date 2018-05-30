@@ -76,6 +76,7 @@ Plug 'honza/vim-snippets'
 
 "" Color
 Plug 'tomasr/molokai'
+Plug 'dikiaap/minimalist'
 
 "*****************************************************************************
 "" Custom bundles
@@ -183,7 +184,9 @@ set number
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')
-  colorscheme molokai
+  set t_Co=256
+  syntax on
+  colorscheme minimalist
 endif
 
 set mousemodel=popup

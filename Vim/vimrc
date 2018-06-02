@@ -179,13 +179,15 @@ let g:session_command_aliases = 1
 "*****************************************************************************
 syntax on
 set ruler
-set number
+set relativenumber
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')
   set t_Co=256
   syntax on
   colorscheme minimalist
+  " Fix for use relative number with minimalist color scheme
+  hi CursorLineNr ctermfg=59 ctermbg=NONE
 endif
 
 set mousemodel=popup

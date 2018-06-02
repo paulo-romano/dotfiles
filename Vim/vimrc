@@ -44,7 +44,6 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'Raimondi/delimitMate'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
-Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 if isdirectory('/usr/local/opt/fzf')
@@ -202,13 +201,6 @@ if has("gui_running")
 else
   let g:CSApprox_loaded = 1
 
-  " IndentLine
-  let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = 0
-  let g:indentLine_char = '┆'
-  let g:indentLine_faster = 1
-
-  
   if $COLORTERM == 'gnome-terminal'
     set term=gnome-256color
   else

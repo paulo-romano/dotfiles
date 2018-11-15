@@ -102,14 +102,8 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-alias jeitto='cd ~/Documents/Jeitto'
-alias ssh_freia='sh ~/Documents/Jeitto/bin/ssh_freia.sh'
-alias ssh_ap='sh ~/Documents/Jeitto/bin/ssh_ap.sh'
-alias workon_backend='workon backend'
-alias workon_heimdall='workon heimdall'
-alias workon_sif='workon sif'
-alias workon_scripts='workon Scripts'
-### Enviroment Variables
+### Jeitto conf
+source jeittorc
 
 ### Prompt Configuration
 prompt_virtualenv() {
